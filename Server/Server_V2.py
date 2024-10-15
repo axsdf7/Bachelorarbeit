@@ -76,7 +76,7 @@ def handle_client(client_socket, addr):
                 client_socket.sendall(message.encode())
                 logger.info(f"Nachricht an {addr} gesendet: {message}")
                 counter += 1
-                time.sleep(0.1)  # Sendet jede Sekunde eine Nachricht
+                time.sleep(0.01)  # Sendet jede Sekunde eine Nachricht
                 if counter > 100:
                     break
         except ConnectionResetError:
