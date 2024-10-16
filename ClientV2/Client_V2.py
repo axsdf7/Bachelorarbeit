@@ -2,6 +2,7 @@ import socket
 import threading
 import time
 
+
 def discover_server(broadcast_port=50001, timeout=30):
     """Wartet auf eine Broadcast-Nachricht vom Server und gibt die Server-IP und den Port zurück"""
     with socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP) as sock:
@@ -19,6 +20,7 @@ def discover_server(broadcast_port=50001, timeout=30):
             print("Timeout: Kein Server gefunden.")
             return None, None
 
+
 def send_data(client_socket, frequency):
     """Sendet Daten mit einem Zähler alle 50 ms an den Server."""
     counter = 0
@@ -35,6 +37,7 @@ def send_data(client_socket, frequency):
     except KeyboardInterrupt:
         print("Übertragung manuell abgebrochen.")
 
+
 def receive_data(client_socket):
     """Empfängt Daten vom Server."""
     try:
@@ -47,6 +50,7 @@ def receive_data(client_socket):
                 break
     except KeyboardInterrupt:
         print("Empfang manuell abgebrochen.")
+
 
 def start_client(frequency):
     server_ip, port = discover_server()
@@ -69,6 +73,7 @@ def start_client(frequency):
         # Warten, bis beide Threads beendet sind
         send_thread.join()
         receive_thread.join()
+
 
 # Beispiel: Nachricht an den Server senden und empfangen
 start_client(10)

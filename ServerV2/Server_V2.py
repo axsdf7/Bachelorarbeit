@@ -5,10 +5,11 @@ import time
 import os
 import psutil  # Modul für den Zugriff auf Netzwerkinterfaces
 
+
 # Log-Datei entfernen, falls sie existiert
-log_file = 'server.log'
-if os.path.exists(log_file):
-    os.remove(log_file)
+if os.path.exists('server.log'):
+    os.remove('server.log')
+
 
 # Logger konfigurieren
 logging.basicConfig(
@@ -17,6 +18,7 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger("ServerLogger")
+
 
 def broadcast_server_info(server_port=50000, broadcast_port=50001, interval=5):
     """Sendet die IP-Adresse des Servers regelmäßig per Broadcast"""
@@ -28,6 +30,7 @@ def broadcast_server_info(server_port=50000, broadcast_port=50001, interval=5):
             sock.sendto(message.encode(), ('<broadcast>', broadcast_port))
             logger.info(f"Broadcast Nachricht gesendet: {message}")
             time.sleep(interval)
+
 
 def get_localip(timeout=60):
     # Versucht eine gültige lokale IP-Adresse zu finden, andernfalls wird der Server heruntergefahren
@@ -94,6 +97,7 @@ def handle_client(client_socket, addr):
 
     client_socket.close()
 
+
 def start_server(port=50000):
     # Startet den Broadcast-Thread
     broadcast_thread = threading.Thread(target=broadcast_server_info)
@@ -117,6 +121,6 @@ def start_server(port=50000):
     finally:
         server_socket.close()
 
+
 # Starte den Server
 start_server()
-
