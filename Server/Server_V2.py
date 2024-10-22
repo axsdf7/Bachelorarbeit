@@ -26,13 +26,13 @@ def create_logger():
 def broadcast_server_info(logging_object, port_server, port_broadcast, server_ip):
     interval = 5
     # Sendet die IP-Adresse des Servers regelmäßig per Broadcast
-    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP) as sock:
-        sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
-        message = f"{server_ip}:{port_server}"
-        while True:
-            sock.sendto(message.encode(), ('<broadcast>', port_broadcast))
-            logging_object.info(f"Broadcast Nachricht gesendet: {message}")
-            time.sleep(interval)
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
+    sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+    message = f"{server_ip}:{port_server}"
+    while True:
+        sock.sendto(message.encode(), ('<broadcast>', port_broadcast))
+        logging_object.info(f"Broadcast Nachricht gesendet: {message}")
+        time.sleep(interval)
 
 
 def get_localip(logging_object):

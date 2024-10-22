@@ -1,216 +1,213 @@
-2024-10-22 17:07:20,975 - INFO - Gefundene lokale IP-Adresse: 192.168.2.122
-2024-10-22 17:07:20,975 - INFO - Server läuft auf 192.168.2.122:50000 und wartet auf Verbindungen...
-2024-10-22 17:07:20,976 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
-2024-10-22 17:07:20,979 - INFO - Verbindung hergestellt mit ('192.168.2.122', 58701)
-2024-10-22 17:07:20,979 - INFO - Thread für Verbindung mit ('192.168.2.122', 58701) gestartet.
-2024-10-22 17:07:20,979 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 0
-2024-10-22 17:07:20,979 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 0
-2024-10-22 17:07:21,030 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 1
-2024-10-22 17:07:21,084 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 1
-2024-10-22 17:07:21,085 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 2
-2024-10-22 17:07:21,139 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 3
-2024-10-22 17:07:21,189 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 2
-2024-10-22 17:07:21,195 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 4
-2024-10-22 17:07:21,248 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 5
-2024-10-22 17:07:21,290 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 3
-2024-10-22 17:07:21,303 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 6
-2024-10-22 17:07:21,356 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 7
-2024-10-22 17:07:21,394 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 4
-2024-10-22 17:07:21,409 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 8
-2024-10-22 17:07:21,460 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 9
-2024-10-22 17:07:21,495 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 5
-2024-10-22 17:07:21,514 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 10
-2024-10-22 17:07:21,569 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 11
-2024-10-22 17:07:21,600 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 6
-2024-10-22 17:07:21,624 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 12
-2024-10-22 17:07:21,677 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 13
-2024-10-22 17:07:21,703 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 7
-2024-10-22 17:07:21,730 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 14
-2024-10-22 17:07:21,784 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 15
-2024-10-22 17:07:21,804 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 8
-2024-10-22 17:07:21,836 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 16
-2024-10-22 17:07:21,889 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 17
-2024-10-22 17:07:21,906 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 9
-2024-10-22 17:07:21,943 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 18
-2024-10-22 17:07:21,998 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 19
-2024-10-22 17:07:22,009 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 10
-2024-10-22 17:07:22,052 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 20
-2024-10-22 17:07:22,107 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 21
-2024-10-22 17:07:22,114 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 11
-2024-10-22 17:07:22,160 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 22
-2024-10-22 17:07:22,212 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 23
-2024-10-22 17:07:22,216 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 12
-2024-10-22 17:07:22,265 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 24
-2024-10-22 17:07:22,320 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 25
-2024-10-22 17:07:22,320 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 13
-2024-10-22 17:07:22,373 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 26
-2024-10-22 17:07:22,425 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 27
-2024-10-22 17:07:22,425 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 14
-2024-10-22 17:07:22,479 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 28
-2024-10-22 17:07:22,526 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 15
-2024-10-22 17:07:22,529 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 29
-2024-10-22 17:07:22,584 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 30
-2024-10-22 17:07:22,630 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 16
-2024-10-22 17:07:22,637 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 31
-2024-10-22 17:07:22,690 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 32
-2024-10-22 17:07:22,733 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 17
-2024-10-22 17:07:22,745 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 33
-2024-10-22 17:07:22,800 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 34
-2024-10-22 17:07:22,836 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 18
-2024-10-22 17:07:22,855 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 35
-2024-10-22 17:07:22,908 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 36
-2024-10-22 17:07:22,939 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 19
-2024-10-22 17:07:22,962 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 37
-2024-10-22 17:07:23,017 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 38
-2024-10-22 17:07:23,044 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 20
-2024-10-22 17:07:23,071 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 39
-2024-10-22 17:07:23,125 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 40
-2024-10-22 17:07:23,149 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 21
-2024-10-22 17:07:23,178 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 41
-2024-10-22 17:07:23,234 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 42
-2024-10-22 17:07:23,251 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 22
-2024-10-22 17:07:23,287 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 43
-2024-10-22 17:07:23,338 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 44
-2024-10-22 17:07:23,353 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 23
-2024-10-22 17:07:23,392 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 45
-2024-10-22 17:07:23,444 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 46
-2024-10-22 17:07:23,455 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 24
-2024-10-22 17:07:23,499 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 47
-2024-10-22 17:07:23,554 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 48
-2024-10-22 17:07:23,559 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 25
-2024-10-22 17:07:23,609 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 49
-2024-10-22 17:07:23,663 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 26
-2024-10-22 17:07:23,664 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 50
-2024-10-22 17:07:23,718 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 51
-2024-10-22 17:07:23,767 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 27
-2024-10-22 17:07:23,771 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 52
-2024-10-22 17:07:23,826 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 53
-2024-10-22 17:07:23,871 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 28
-2024-10-22 17:07:23,877 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 54
-2024-10-22 17:07:23,933 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 55
-2024-10-22 17:07:23,976 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 29
-2024-10-22 17:07:23,987 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 56
-2024-10-22 17:07:24,041 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 57
-2024-10-22 17:07:24,080 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 30
-2024-10-22 17:07:24,097 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 58
-2024-10-22 17:07:24,148 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 59
-2024-10-22 17:07:24,181 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 31
-2024-10-22 17:07:24,202 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 60
-2024-10-22 17:07:24,255 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 61
-2024-10-22 17:07:24,284 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 32
-2024-10-22 17:07:24,307 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 62
-2024-10-22 17:07:24,357 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 63
-2024-10-22 17:07:24,386 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 33
-2024-10-22 17:07:24,411 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 64
-2024-10-22 17:07:24,462 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 65
-2024-10-22 17:07:24,492 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 34
-2024-10-22 17:07:24,517 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 66
-2024-10-22 17:07:24,570 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 67
-2024-10-22 17:07:24,595 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 35
-2024-10-22 17:07:24,621 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 68
-2024-10-22 17:07:24,675 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 69
-2024-10-22 17:07:24,695 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 36
-2024-10-22 17:07:24,730 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 70
-2024-10-22 17:07:24,783 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 71
-2024-10-22 17:07:24,798 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 37
-2024-10-22 17:07:24,838 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 72
-2024-10-22 17:07:24,890 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 73
-2024-10-22 17:07:24,901 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 38
-2024-10-22 17:07:24,943 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 74
-2024-10-22 17:07:24,997 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 75
-2024-10-22 17:07:25,005 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 39
-2024-10-22 17:07:25,048 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 76
-2024-10-22 17:07:25,101 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 77
-2024-10-22 17:07:25,106 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 40
-2024-10-22 17:07:25,151 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 78
-2024-10-22 17:07:25,207 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 79
-2024-10-22 17:07:25,207 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 41
-2024-10-22 17:07:25,257 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 80
-2024-10-22 17:07:25,307 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 42
-2024-10-22 17:07:25,309 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 81
-2024-10-22 17:07:25,361 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 82
-2024-10-22 17:07:25,407 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 43
-2024-10-22 17:07:25,415 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 83
-2024-10-22 17:07:25,470 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 84
-2024-10-22 17:07:25,509 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 44
-2024-10-22 17:07:25,521 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 85
-2024-10-22 17:07:25,573 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 86
-2024-10-22 17:07:25,614 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 45
-2024-10-22 17:07:25,626 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 87
-2024-10-22 17:07:25,678 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 88
-2024-10-22 17:07:25,716 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 46
-2024-10-22 17:07:25,731 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 89
-2024-10-22 17:07:25,787 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 90
-2024-10-22 17:07:25,817 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 47
-2024-10-22 17:07:25,842 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 91
-2024-10-22 17:07:25,893 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 92
-2024-10-22 17:07:25,921 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 48
-2024-10-22 17:07:25,946 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 93
-2024-10-22 17:07:25,978 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
-2024-10-22 17:07:26,001 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 94
-2024-10-22 17:07:26,024 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 49
-2024-10-22 17:07:26,055 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 95
-2024-10-22 17:07:26,108 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 96
-2024-10-22 17:07:26,124 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 50
-2024-10-22 17:07:26,159 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 97
-2024-10-22 17:07:26,211 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 98
-2024-10-22 17:07:26,228 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 51
-2024-10-22 17:07:26,265 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 99
-2024-10-22 17:07:26,319 - INFO - Nachricht an ('192.168.2.122', 58701) gesendet: Server Nachricht 100
-2024-10-22 17:07:26,330 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 52
-2024-10-22 17:07:26,435 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 53
-2024-10-22 17:07:26,538 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 54
-2024-10-22 17:07:26,640 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 55
-2024-10-22 17:07:26,745 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 56
-2024-10-22 17:07:26,845 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 57
-2024-10-22 17:07:26,946 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 58
-2024-10-22 17:07:27,046 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 59
-2024-10-22 17:07:27,151 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 60
-2024-10-22 17:07:27,252 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 61
-2024-10-22 17:07:27,356 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 62
-2024-10-22 17:07:27,461 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 63
-2024-10-22 17:07:27,562 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 64
-2024-10-22 17:07:27,663 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 65
-2024-10-22 17:07:27,763 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 66
-2024-10-22 17:07:27,867 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 67
-2024-10-22 17:07:27,970 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 68
-2024-10-22 17:07:28,070 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 69
-2024-10-22 17:07:28,173 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 70
-2024-10-22 17:07:28,274 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 71
-2024-10-22 17:07:28,379 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 72
-2024-10-22 17:07:28,479 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 73
-2024-10-22 17:07:28,580 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 74
-2024-10-22 17:07:28,684 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 75
-2024-10-22 17:07:28,784 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 76
-2024-10-22 17:07:28,888 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 77
-2024-10-22 17:07:28,990 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 78
-2024-10-22 17:07:29,095 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 79
-2024-10-22 17:07:29,197 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 80
-2024-10-22 17:07:29,300 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 81
-2024-10-22 17:07:29,401 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 82
-2024-10-22 17:07:29,505 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 83
-2024-10-22 17:07:29,611 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 84
-2024-10-22 17:07:29,714 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 85
-2024-10-22 17:07:29,814 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 86
-2024-10-22 17:07:29,920 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 87
-2024-10-22 17:07:30,024 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 88
-2024-10-22 17:07:30,129 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 89
-2024-10-22 17:07:30,234 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 90
-2024-10-22 17:07:30,334 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 91
-2024-10-22 17:07:30,434 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 92
-2024-10-22 17:07:30,540 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 93
-2024-10-22 17:07:30,644 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 94
-2024-10-22 17:07:30,747 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 95
-2024-10-22 17:07:30,848 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 96
-2024-10-22 17:07:30,948 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 97
-2024-10-22 17:07:30,980 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
-2024-10-22 17:07:31,049 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 98
-2024-10-22 17:07:31,152 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 99
-2024-10-22 17:07:31,257 - INFO - Empfangene Nachricht von ('192.168.2.122', 58701): 100
-2024-10-22 17:07:35,986 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
-2024-10-22 17:07:40,990 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
-2024-10-22 17:07:44,162 - INFO - Verbindung mit ('192.168.2.122', 58701) geschlossen.
-2024-10-22 17:07:45,995 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
-2024-10-22 17:07:50,998 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
-2024-10-22 17:07:56,000 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
-2024-10-22 17:07:57,191 - INFO - Server wird heruntergefahren.
+2024-10-22 17:20:33,762 - INFO - Gefundene lokale IP-Adresse: 192.168.2.122
+2024-10-22 17:20:33,762 - INFO - Server läuft auf 192.168.2.122:50000 und wartet auf Verbindungen...
+2024-10-22 17:20:33,763 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
+2024-10-22 17:20:38,765 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
+2024-10-22 17:20:38,769 - INFO - Verbindung hergestellt mit ('192.168.2.122', 58920)
+2024-10-22 17:20:38,769 - INFO - Thread für Verbindung mit ('192.168.2.122', 58920) gestartet.
+2024-10-22 17:20:38,769 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 0
+2024-10-22 17:20:38,770 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 0
+2024-10-22 17:20:38,824 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 1
+2024-10-22 17:20:38,869 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 1
+2024-10-22 17:20:38,880 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 2
+2024-10-22 17:20:38,936 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 3
+2024-10-22 17:20:38,972 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 2
+2024-10-22 17:20:38,986 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 4
+2024-10-22 17:20:39,040 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 5
+2024-10-22 17:20:39,074 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 3
+2024-10-22 17:20:39,094 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 6
+2024-10-22 17:20:39,149 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 7
+2024-10-22 17:20:39,174 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 4
+2024-10-22 17:20:39,201 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 8
+2024-10-22 17:20:39,255 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 9
+2024-10-22 17:20:39,279 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 5
+2024-10-22 17:20:39,311 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 10
+2024-10-22 17:20:39,366 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 11
+2024-10-22 17:20:39,382 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 6
+2024-10-22 17:20:39,417 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 12
+2024-10-22 17:20:39,468 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 13
+2024-10-22 17:20:39,485 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 7
+2024-10-22 17:20:39,523 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 14
+2024-10-22 17:20:39,574 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 15
+2024-10-22 17:20:39,590 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 8
+2024-10-22 17:20:39,626 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 16
+2024-10-22 17:20:39,678 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 17
+2024-10-22 17:20:39,694 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 9
+2024-10-22 17:20:39,731 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 18
+2024-10-22 17:20:39,786 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 19
+2024-10-22 17:20:39,799 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 10
+2024-10-22 17:20:39,837 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 20
+2024-10-22 17:20:39,888 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 21
+2024-10-22 17:20:39,903 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 11
+2024-10-22 17:20:39,944 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 22
+2024-10-22 17:20:39,997 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 23
+2024-10-22 17:20:40,004 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 12
+2024-10-22 17:20:40,051 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 24
+2024-10-22 17:20:40,102 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 25
+2024-10-22 17:20:40,107 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 13
+2024-10-22 17:20:40,156 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 26
+2024-10-22 17:20:40,209 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 27
+2024-10-22 17:20:40,209 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 14
+2024-10-22 17:20:40,264 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 28
+2024-10-22 17:20:40,310 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 15
+2024-10-22 17:20:40,318 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 29
+2024-10-22 17:20:40,373 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 30
+2024-10-22 17:20:40,414 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 16
+2024-10-22 17:20:40,427 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 31
+2024-10-22 17:20:40,478 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 32
+2024-10-22 17:20:40,516 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 17
+2024-10-22 17:20:40,530 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 33
+2024-10-22 17:20:40,585 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 34
+2024-10-22 17:20:40,620 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 18
+2024-10-22 17:20:40,640 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 35
+2024-10-22 17:20:40,694 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 36
+2024-10-22 17:20:40,722 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 19
+2024-10-22 17:20:40,747 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 37
+2024-10-22 17:20:40,802 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 38
+2024-10-22 17:20:40,822 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 20
+2024-10-22 17:20:40,857 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 39
+2024-10-22 17:20:40,911 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 40
+2024-10-22 17:20:40,927 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 21
+2024-10-22 17:20:40,964 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 41
+2024-10-22 17:20:41,018 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 42
+2024-10-22 17:20:41,028 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 22
+2024-10-22 17:20:41,070 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 43
+2024-10-22 17:20:41,123 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 44
+2024-10-22 17:20:41,130 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 23
+2024-10-22 17:20:41,173 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 45
+2024-10-22 17:20:41,228 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 46
+2024-10-22 17:20:41,235 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 24
+2024-10-22 17:20:41,281 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 47
+2024-10-22 17:20:41,333 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 48
+2024-10-22 17:20:41,338 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 25
+2024-10-22 17:20:41,384 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 49
+2024-10-22 17:20:41,436 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 50
+2024-10-22 17:20:41,440 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 26
+2024-10-22 17:20:41,486 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 51
+2024-10-22 17:20:41,540 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 52
+2024-10-22 17:20:41,544 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 27
+2024-10-22 17:20:41,596 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 53
+2024-10-22 17:20:41,647 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 54
+2024-10-22 17:20:41,647 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 28
+2024-10-22 17:20:41,698 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 55
+2024-10-22 17:20:41,751 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 56
+2024-10-22 17:20:41,751 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 29
+2024-10-22 17:20:41,803 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 57
+2024-10-22 17:20:41,853 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 30
+2024-10-22 17:20:41,858 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 58
+2024-10-22 17:20:41,911 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 59
+2024-10-22 17:20:41,957 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 31
+2024-10-22 17:20:41,965 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 60
+2024-10-22 17:20:42,019 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 61
+2024-10-22 17:20:42,061 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 32
+2024-10-22 17:20:42,074 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 62
+2024-10-22 17:20:42,127 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 63
+2024-10-22 17:20:42,165 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 33
+2024-10-22 17:20:42,181 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 64
+2024-10-22 17:20:42,236 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 65
+2024-10-22 17:20:42,270 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 34
+2024-10-22 17:20:42,291 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 66
+2024-10-22 17:20:42,344 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 67
+2024-10-22 17:20:42,372 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 35
+2024-10-22 17:20:42,398 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 68
+2024-10-22 17:20:42,453 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 69
+2024-10-22 17:20:42,474 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 36
+2024-10-22 17:20:42,506 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 70
+2024-10-22 17:20:42,561 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 71
+2024-10-22 17:20:42,578 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 37
+2024-10-22 17:20:42,613 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 72
+2024-10-22 17:20:42,664 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 73
+2024-10-22 17:20:42,682 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 38
+2024-10-22 17:20:42,718 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 74
+2024-10-22 17:20:42,770 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 75
+2024-10-22 17:20:42,786 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 39
+2024-10-22 17:20:42,823 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 76
+2024-10-22 17:20:42,878 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 77
+2024-10-22 17:20:42,888 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 40
+2024-10-22 17:20:42,929 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 78
+2024-10-22 17:20:42,980 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 79
+2024-10-22 17:20:42,990 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 41
+2024-10-22 17:20:43,034 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 80
+2024-10-22 17:20:43,086 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 81
+2024-10-22 17:20:43,090 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 42
+2024-10-22 17:20:43,138 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 82
+2024-10-22 17:20:43,190 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 83
+2024-10-22 17:20:43,191 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 43
+2024-10-22 17:20:43,243 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 84
+2024-10-22 17:20:43,292 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 44
+2024-10-22 17:20:43,296 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 85
+2024-10-22 17:20:43,346 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 86
+2024-10-22 17:20:43,392 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 45
+2024-10-22 17:20:43,401 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 87
+2024-10-22 17:20:43,454 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 88
+2024-10-22 17:20:43,496 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 46
+2024-10-22 17:20:43,506 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 89
+2024-10-22 17:20:43,557 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 90
+2024-10-22 17:20:43,601 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 47
+2024-10-22 17:20:43,611 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 91
+2024-10-22 17:20:43,663 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 92
+2024-10-22 17:20:43,701 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 48
+2024-10-22 17:20:43,716 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 93
+2024-10-22 17:20:43,770 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 94
+2024-10-22 17:20:43,770 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
+2024-10-22 17:20:43,804 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 49
+2024-10-22 17:20:43,824 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 95
+2024-10-22 17:20:43,879 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 96
+2024-10-22 17:20:43,909 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 50
+2024-10-22 17:20:43,933 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 97
+2024-10-22 17:20:43,986 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 98
+2024-10-22 17:20:44,013 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 51
+2024-10-22 17:20:44,040 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 99
+2024-10-22 17:20:44,092 - INFO - Nachricht an ('192.168.2.122', 58920) gesendet: Server Nachricht 100
+2024-10-22 17:20:44,117 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 52
+2024-10-22 17:20:44,221 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 53
+2024-10-22 17:20:44,321 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 54
+2024-10-22 17:20:44,426 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 55
+2024-10-22 17:20:44,528 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 56
+2024-10-22 17:20:44,630 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 57
+2024-10-22 17:20:44,731 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 58
+2024-10-22 17:20:44,832 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 59
+2024-10-22 17:20:44,932 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 60
+2024-10-22 17:20:45,033 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 61
+2024-10-22 17:20:45,134 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 62
+2024-10-22 17:20:45,238 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 63
+2024-10-22 17:20:45,342 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 64
+2024-10-22 17:20:45,446 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 65
+2024-10-22 17:20:45,549 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 66
+2024-10-22 17:20:45,650 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 67
+2024-10-22 17:20:45,755 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 68
+2024-10-22 17:20:45,857 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 69
+2024-10-22 17:20:45,958 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 70
+2024-10-22 17:20:46,059 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 71
+2024-10-22 17:20:46,162 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 72
+2024-10-22 17:20:46,265 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 73
+2024-10-22 17:20:46,370 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 74
+2024-10-22 17:20:46,471 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 75
+2024-10-22 17:20:46,574 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 76
+2024-10-22 17:20:46,675 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 77
+2024-10-22 17:20:46,777 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 78
+2024-10-22 17:20:46,878 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 79
+2024-10-22 17:20:46,979 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 80
+2024-10-22 17:20:47,083 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 81
+2024-10-22 17:20:47,186 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 82
+2024-10-22 17:20:47,290 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 83
+2024-10-22 17:20:47,391 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 84
+2024-10-22 17:20:47,494 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 85
+2024-10-22 17:20:47,598 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 86
+2024-10-22 17:20:47,698 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 87
+2024-10-22 17:20:47,803 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 88
+2024-10-22 17:20:47,906 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 89
+2024-10-22 17:20:48,009 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 90
+2024-10-22 17:20:48,114 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 91
+2024-10-22 17:20:48,217 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 92
+2024-10-22 17:20:48,322 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 93
+2024-10-22 17:20:48,424 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 94
+2024-10-22 17:20:48,528 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 95
+2024-10-22 17:20:48,631 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 96
+2024-10-22 17:20:48,731 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 97
+2024-10-22 17:20:48,773 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
+2024-10-22 17:20:48,835 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 98
+2024-10-22 17:20:48,940 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 99
+2024-10-22 17:20:49,043 - INFO - Empfangene Nachricht von ('192.168.2.122', 58920): 100
+2024-10-22 17:20:53,775 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
+2024-10-22 17:20:53,875 - INFO - Server wird heruntergefahren.
+2024-10-22 17:20:53,877 - INFO - Verbindung mit ('192.168.2.122', 58920) geschlossen.

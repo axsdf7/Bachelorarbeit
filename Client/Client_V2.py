@@ -5,20 +5,20 @@ import time
 
 def discover_server(broadcast_port=50001, timeout=30):
     # Wartet auf eine Broadcast-Nachricht vom Server und gibt die Server-IP und den Port zurück
-    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP) as sock:
-        sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
-        sock.bind(("", broadcast_port))
-        sock.settimeout(timeout)
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
+    sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+    sock.bind(("", broadcast_port))
+    sock.settimeout(timeout)
 
-        try:
-            print("Warte auf Broadcast-Nachricht vom Server...")
-            data, addr = sock.recvfrom(1024)
-            server_ip, port = data.decode().split(":")
-            print(f"Server gefunden: {server_ip}:{port}")
-            return server_ip, int(port)
-        except socket.timeout:
-            print("Timeout: Kein Server gefunden.")
-            return None, None
+    try:
+        print("Warte auf Broadcast-Nachricht vom Server...")
+        data, addr = sock.recvfrom(1024)
+        server_ip, port = data.decode().split(":")
+        print(f"Server gefunden: {server_ip}:{port}")
+        return server_ip, int(port)
+    except socket.timeout:
+        print("Timeout: Kein Server gefunden.")
+        return None, None
 
 
 def send_data(client_socket, frequency):
@@ -52,30 +52,31 @@ def receive_data(client_socket):
         print("Empfang manuell abgebrochen.")
 
 
-def start_client(frequency):
+def start_client():
+    frequency = 10
     server_ip, port = discover_server()
     if not server_ip:
         print("Server konnte nicht gefunden werden.")
         return
 
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_socket:
-        client_socket.connect((server_ip, port))
-        print("Verbunden mit dem Server:", server_ip)
+    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    client_socket.connect((server_ip, port))
+    print("Verbunden mit dem Server:", server_ip)
 
-        # Erstelle einen Thread zum Senden und einen zum Empfangen
-        send_thread = threading.Thread(target=send_data, args=(client_socket, frequency))
-        receive_thread = threading.Thread(target=receive_data, args=(client_socket,))
+    # Erstelle einen Thread zum Senden und einen zum Empfangen
+    send_thread = threading.Thread(target=send_data, args=(client_socket, frequency))
+    receive_thread = threading.Thread(target=receive_data, args=(client_socket,))
 
-        # Starte die Threads
-        send_thread.start()
-        receive_thread.start()
+    # Starte die Threads
+    send_thread.start()
+    receive_thread.start()
 
-        # Warten, bis beide Threads beendet sind
-        send_thread.join()
-        receive_thread.join()
+    # Warten, bis beide Threads beendet sind
+    send_thread.join()
+    receive_thread.join()
 
-        client_socket.close()
+    client_socket.close()
 
 
 # Beispiel: Nachricht an den Server senden und empfangen
-start_client(10)
+start_client()
