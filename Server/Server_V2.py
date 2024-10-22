@@ -6,22 +6,22 @@ import os
 import psutil  # Modul für den Zugriff auf Netzwerkinterfaces
 
 
-# Log-Datei entfernen, falls sie existiert
-if os.path.exists('server.log'):
-    os.remove('server.log')
+def create_logger():
+    # Log-Datei entfernen, falls sie existiert
+    if os.path.exists('server.log'):
+        os.remove('server.log')
 
+    # Logger konfigurieren
+    logging.basicConfig(
+        filename='server.log',
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Logger konfigurieren
-logging.basicConfig(
-    filename='server.log',
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger("ServerLogger")
+    return logging.getLogger("ServerLogger")
 
 
 def broadcast_server_info(server_port=50000, broadcast_port=50001, interval=5):
-    """Sendet die IP-Adresse des Servers regelmäßig per Broadcast"""
+    # Sendet die IP-Adresse des Servers regelmäßig per Broadcast
     server_ip = get_localip()
     with socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP) as sock:
         sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
@@ -37,7 +37,7 @@ def get_localip(timeout=60):
     start_time = time.time()
 
     while time.time() - start_time < timeout:
-        for interface, addrs in psutil.net_if_addrs().items():
+        for [interface, addrs] in psutil.net_if_addrs().items():
             for addr in addrs:
                 # Prüft auf IPv4-Adresse, die nicht die Loopback-Adresse ist
                 if addr.family == socket.AF_INET and addr.address != "127.0.0.1":
@@ -53,7 +53,7 @@ def get_localip(timeout=60):
 
 
 def handle_client(client_socket, addr):
-    """Verarbeitet eingehende und ausgehende Nachrichten mit dem Client"""
+    # Verarbeitet eingehende und ausgehende Nachrichten mit dem Client
 
     logger.info(f"Verbindung hergestellt mit {addr}")
 
@@ -79,7 +79,7 @@ def handle_client(client_socket, addr):
                 client_socket.sendall(message.encode())
                 logger.info(f"Nachricht an {addr} gesendet: {message}")
                 counter += 1
-                time.sleep(0.01)  # Sendet jede Sekunde eine Nachricht
+                time.sleep(0.05)  # Sendet jede Sekunde eine Nachricht
                 if counter > 100:
                     break
         except ConnectionResetError:
@@ -123,4 +123,5 @@ def start_server(port=50000):
 
 
 # Starte den Server
+logger = create_logger()
 start_server()

@@ -4,7 +4,7 @@ import time
 
 
 def discover_server(broadcast_port=50001, timeout=30):
-    """Wartet auf eine Broadcast-Nachricht vom Server und gibt die Server-IP und den Port zurück"""
+    # Wartet auf eine Broadcast-Nachricht vom Server und gibt die Server-IP und den Port zurück
     with socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP) as sock:
         sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
         sock.bind(("", broadcast_port))
@@ -22,7 +22,7 @@ def discover_server(broadcast_port=50001, timeout=30):
 
 
 def send_data(client_socket, frequency):
-    """Sendet Daten mit einem Zähler alle 50 ms an den Server."""
+    # Sendet Daten mit einem Zähler alle 50 ms an den Server.
     counter = 0
     period_duration = 1 / frequency
     try:
@@ -39,7 +39,7 @@ def send_data(client_socket, frequency):
 
 
 def receive_data(client_socket):
-    """Empfängt Daten vom Server."""
+    # Empfängt Daten vom Server.
     try:
         while True:
             data = client_socket.recv(1024).decode()
