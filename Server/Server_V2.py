@@ -52,42 +52,44 @@ def get_localip(timeout=60):
     raise SystemExit("Server heruntergefahren: Keine gültige IP-Adresse gefunden.")
 
 
+# Funktion zum Empfang von Nachrichten vom Client
+def receive_from_client(client_socket, address):
+    try:
+        while True:
+            data = client_socket.recv(1024).decode()
+            if data:
+                logger.info(f"Empfangene Nachricht von {address}: {data}")
+            else:
+                logger.info(f"Verbindung mit {address} geschlossen.")
+                break
+    except ConnectionResetError:
+        logger.info(f"Verbindung mit {address} unerwartet getrennt.")
+
+
+# Funktion zum Senden von Nachrichten an den Client
+def send_to_client(client_socket, address):
+    counter = 0
+    try:
+        while True:
+            message = f"Server Nachricht {counter}"
+            client_socket.sendall(message.encode())
+            logger.info(f"Nachricht an {address} gesendet: {message}")
+            counter += 1
+            time.sleep(0.05)
+            if counter > 100:
+                break
+    except ConnectionResetError:
+        logger.info(f"Verbindung mit {address} zum Senden getrennt.")
+
+
 def handle_client(client_socket, addr):
     # Verarbeitet eingehende und ausgehende Nachrichten mit dem Client
 
     logger.info(f"Verbindung hergestellt mit {addr}")
 
-    # Funktion zum Empfang von Nachrichten vom Client
-    def receive_from_client():
-        try:
-            while True:
-                data = client_socket.recv(1024).decode()
-                if data:
-                    logger.info(f"Empfangene Nachricht von {addr}: {data}")
-                else:
-                    logger.info(f"Verbindung mit {addr} geschlossen.")
-                    break
-        except ConnectionResetError:
-            logger.info(f"Verbindung mit {addr} unerwartet getrennt.")
-
-    # Funktion zum Senden von Nachrichten an den Client
-    def send_to_client():
-        counter = 0
-        try:
-            while True:
-                message = f"Server Nachricht {counter}"
-                client_socket.sendall(message.encode())
-                logger.info(f"Nachricht an {addr} gesendet: {message}")
-                counter += 1
-                time.sleep(0.05)  # Sendet jede Sekunde eine Nachricht
-                if counter > 100:
-                    break
-        except ConnectionResetError:
-            logger.info(f"Verbindung mit {addr} zum Senden getrennt.")
-
     # Erstelle und starte die Threads für Senden und Empfangen
-    receive_thread = threading.Thread(target=receive_from_client)
-    send_thread = threading.Thread(target=send_to_client)
+    receive_thread = threading.Thread(target=receive_from_client, args=(client_socket, addr))
+    send_thread = threading.Thread(target=send_to_client, args=(client_socket, addr))
     receive_thread.start()
     send_thread.start()
 
