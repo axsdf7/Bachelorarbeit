@@ -22,12 +22,11 @@ def discover_server(broadcast_port=50001, timeout=30):
 
 
 def send_data(client_socket, frequency):
-    # Sendet Daten mit einem Zähler alle 50 ms an den Server.
     counter = 0
     period_duration = 1 / frequency
     try:
         while True:
-            message = str(counter)
+            message = f"Client-Daten: {counter}"
             client_socket.sendall(message.encode())
             print("Nachricht gesendet:", message)
             counter += 1
@@ -39,12 +38,11 @@ def send_data(client_socket, frequency):
 
 
 def receive_data(client_socket):
-    # Empfängt Daten vom Server.
     try:
         while True:
             data = client_socket.recv(1024).decode()
             if data:
-                print("Nachricht vom Server empfangen:", data)
+                print("Nachricht von einem anderen Client empfangen:", data)
             else:
                 print("Verbindung zum Server beendet.")
                 break
@@ -59,7 +57,7 @@ def start_client(frequency):
         return
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_socket:
-        client_socket.connect((server_ip, port))
+        client_socket.connect((server_ip, ))
         print("Verbunden mit dem Server:", server_ip)
 
         # Erstelle einen Thread zum Senden und einen zum Empfangen
@@ -73,8 +71,6 @@ def start_client(frequency):
         # Warten, bis beide Threads beendet sind
         send_thread.join()
         receive_thread.join()
-
-        client_socket.close()
 
 
 # Beispiel: Nachricht an den Server senden und empfangen
