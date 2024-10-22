@@ -2,6 +2,7 @@ import socket
 import threading
 import logging
 import time
+from datetime import datetime
 import os
 import psutil  # Modul für den Zugriff auf Netzwerkinterfaces
 
@@ -72,41 +73,38 @@ def receive_from_client(logging_object, client_socket, address):
 
 
 # Funktion zum Senden von Nachrichten an den Client
-def send_to_client(logging_object, client_socket, address):
-    counter = 0
-    try:
-        while True:
-            message = f"Server Nachricht {counter}"
-            client_socket.sendall(message.encode())
-            logging_object.info(f"Nachricht an {address} gesendet: {message}")
-            counter += 1
-            time.sleep(0.05)
-            if counter > 100:
-                break
-    except ConnectionResetError:
-        logging_object.info(f"Verbindung mit {address} zum Senden getrennt.")
+def send_to_clients(data, clients, sender_socket):
+    for client in clients:
+        if client != sender_socket:
+            client.sendall(data.encode())
+            with open("send_data.log", "a") as f:
+                f.write(f"Nachricht an {client.getpeername()} von {sender_socket.getpeername()} {data}\n")
+                f.flush()
 
 
 # Verarbeitet eingehende und ausgehende Nachrichten mit dem Client
-def handle_client(logging_object, client_socket, addr):
+def handle_client(logging_object, clients, client_socket, client_address):
+    logging_object.info(f"Neue Verbindung von {client_address}")
+    clients.append(client_socket)
 
-    logging_object.info(f"Verbindung hergestellt mit {addr}")
-
-    # Erstelle und starte die Threads für Senden und Empfangen
-    receive_thread = threading.Thread(target=receive_from_client, args=(logging_object, client_socket, addr))
-    send_thread = threading.Thread(target=send_to_client, args=(logging_object, client_socket, addr))
-    receive_thread.start()
-    send_thread.start()
-
-    # Warte, bis beide Threads beendet sind
-    receive_thread.join()
-    send_thread.join()
-
-    client_socket.close()
+    try:
+        while True:
+            data = client_socket.recv(1024).decode()
+            if not data:
+                break
+            logging_object.info(f"Empfangene Nachricht von {client_address}: {data}")
+            send_to_clients(data, clients, client_socket)
+    finally:
+        clients.remove(client_socket)
+        logging_object.info(f"Verbindung beendet: {client_address}")
+        client_socket.close()
 
 
 def start_server(logging_object, port_server, port_broadcast):
     server_ip = get_localip(logging_object)
+    clients = []
+    if os.path.exists('send_data.log'):
+        os.remove('send_data.log')
 
     # Erstelle server_socket Objekt
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -115,14 +113,16 @@ def start_server(logging_object, port_server, port_broadcast):
     logging_object.info(f"Server läuft auf {server_ip}:{port_server} und wartet auf Verbindungen...")
 
     # Startet den Broadcast-Thread
-    broadcast_thread = threading.Thread(target=broadcast_server_info, args=(logging_object, port_server, port_broadcast, server_ip))
+    broadcast_thread = threading.Thread(
+        target=broadcast_server_info,
+        args=(logging_object, port_server, port_broadcast, server_ip))
     broadcast_thread.daemon = True
     broadcast_thread.start()
 
     try:
         while True:
             client_socket, addr = server_socket.accept()
-            client_thread = threading.Thread(target=handle_client, args=(logging_object, client_socket, addr))
+            client_thread = threading.Thread(target=handle_client, args=(logging_object, clients, client_socket, addr))
             client_thread.start()
             logging_object.info(f"Thread für Verbindung mit {addr} gestartet.")
     except KeyboardInterrupt:
