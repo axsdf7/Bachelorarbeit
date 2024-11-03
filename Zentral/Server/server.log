@@ -1,7 +1,5 @@
-2024-10-31 19:23:07,514 - INFO - Gefundene lokale IP-Adresse: 192.168.2.122
-2024-10-31 19:23:07,522 - INFO - Server läuft auf 192.168.2.122:50000 und wartet auf Verbindungen...
-2024-10-31 19:23:07,523 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
-2024-10-31 19:23:12,527 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
-2024-10-31 19:23:17,530 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
-2024-10-31 19:23:22,531 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
-2024-10-31 19:23:23,052 - INFO - Server wird heruntergefahren.
+2024-11-02 16:34:18,015 - INFO - Gefundene lokale IP-Adresse: 192.168.2.122
+2024-11-02 16:34:18,016 - INFO - Server läuft auf 192.168.2.122:50000 und wartet auf Verbindungen...
+2024-11-02 16:34:18,017 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
+2024-11-02 16:34:23,018 - INFO - Broadcast Nachricht gesendet: 192.168.2.122:50000
+2024-11-02 16:34:25,441 - INFO - Server wird heruntergefahren.
