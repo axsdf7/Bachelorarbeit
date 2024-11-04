@@ -3,44 +3,27 @@ import threading
 import time
 
 
-def discover_server(broadcast_port=50001, timeout=30):
-    # Wartet auf eine Broadcast-Nachricht vom Server und gibt die Server-IP und den Port zurück
-    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
-    sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEPORT, 1)
-    sock.bind(("", broadcast_port))
-    sock.settimeout(timeout)
-
-    try:
-        print("Warte auf Broadcast-Nachricht vom Server...")
-        data, addr = sock.recvfrom(1024)
-        server_ip, port = data.decode().split(":")
-        print(f"Server gefunden: {server_ip}:{port}")
-        return server_ip, int(port)
-    except socket.timeout:
-        print("Timeout: Kein Server gefunden.")
-        return None, None
+"""*****************************************************************************************************************"""
 
 
 def send_data(client_socket, frequency):
-    # Sendet Daten mit einem Zähler alle 50 ms an den Server.
+    # Sendet Daten mit einem Zähler an den Server
     name = client_socket.getsockname()
     counter = 0
     period_duration = 1 / frequency
     try:
         while True:
-            message = f"{name}"+": " + str(counter)
+            message = f"{name}: {str(counter)}"
             client_socket.sendall(message.encode())
             print("Nachricht gesendet:", message)
             counter += 1
             time.sleep(period_duration)
-            if counter > 100:
-                break
     except KeyboardInterrupt:
         print("Übertragung manuell abgebrochen.")
 
 
 def receive_data(client_socket):
-    # Empfängt Daten vom Server.
+    # Empfängt Daten vom Server_Library
     try:
         while True:
             data = client_socket.recv(1024).decode()
@@ -53,8 +36,29 @@ def receive_data(client_socket):
         print("Empfang manuell abgebrochen.")
 
 
-def start_client():
-    frequency = 100
+"""*****************************************************************************************************************"""
+
+
+def discover_server(broadcast_port=50001, timeout=30):
+    # Wartet auf eine Broadcast-Nachricht vom Server und gibt die Server-IP und den Port zurück
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
+    sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEPORT, 1)
+    sock.bind(("", broadcast_port))
+    sock.settimeout(timeout)
+
+    try:
+        print("Warte auf Broadcast-Nachricht vom Server...")
+        data, addr = sock.recvfrom(1024)
+        server_ip, port = data.decode().split(":")
+        print(f"Server gefunden: {server_ip}:{port}")
+        sock.close()
+        return server_ip, int(port)
+    except socket.timeout:
+        print("Timeout: Kein Server gefunden.")
+        return None, None
+
+
+def start(frequency: int):
     server_ip, port = discover_server()
     if not server_ip:
         print("Server konnte nicht gefunden werden.")
@@ -77,7 +81,3 @@ def start_client():
     receive_thread.join()
 
     client_socket.close()
-
-
-# Beispiel: Nachricht an den Server senden und empfangen
-start_client()

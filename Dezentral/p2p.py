@@ -100,7 +100,7 @@ def send_data(logging_object, ip_address, socket_object, peer_ips, port, frequen
 
 
 def receive_data(logging_object, socket_object):
-    # Empfängt Daten vom Server.
+    # Empfängt Daten vom Server_Library.
     try:
         while True:
             data = socket_object.recv(1024).decode()
