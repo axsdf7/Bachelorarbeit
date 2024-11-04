@@ -84,7 +84,7 @@ def send_to_clients(data, clients, sender_socket):
 # Verarbeitet eingehende und ausgehende Nachrichten mit dem Client
 def handle_client(logging_object, clients, client_socket, client_address):
     logging_object.info(f"Neue Verbindung von {client_address}")
-    clients.append(client_socket)
+    clients.add(client_socket)
 
     try:
         while True:
@@ -101,7 +101,7 @@ def handle_client(logging_object, clients, client_socket, client_address):
 
 def start_server(logging_object, port_server, port_broadcast):
     server_ip = get_localip(logging_object)
-    clients = []
+    clients = set()
     if os.path.exists('send_data.log'):
         os.remove('send_data.log')
 
