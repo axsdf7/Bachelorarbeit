@@ -5,6 +5,7 @@ import time
 import os
 import psutil  # Modul für den Zugriff auf Netzwerkinterfaces
 
+
 """*****************************************************************************************************************"""
 
 
@@ -97,7 +98,7 @@ def get_localip(logging_object: logging.Logger) -> str:
     :param logging_object: Logger des Servers
     :return: IPv4 des Geräts
     """
-    timeout = 60
+    timeout = 30
     interval = 1
     # Versucht eine gültige lokale IP-Adresse zu finden, andernfalls wird der Server heruntergefahren
     start_time = time.time()
@@ -115,7 +116,8 @@ def get_localip(logging_object: logging.Logger) -> str:
 
     # Timeout erreicht, keine gültige IP-Adresse gefunden
     logging_object.error("Fehler: Keine gültige IP-Adresse gefunden. Server wird heruntergefahren.")
-    raise SystemExit("Server heruntergefahren: Keine gültige IP-Adresse gefunden.")
+    raise SystemExit("Server heruntergefahren: Keine gültige IP-Adresse gefunden.\n"
+                     "Überprüfen Sie die Verbindung mit dem Router.")
 
 
 def handle_client(server_logging_object: logging.Logger, clients_set: set,
@@ -157,28 +159,33 @@ def start(logging_object: logging.Logger, port_server: int, port_broadcast: int,
     server_ip = get_localip(logging_object)
     clients = set()
 
-    # Erstelle server_socket Objekt
-    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_socket.bind((server_ip, port_server))
-    server_socket.listen(250)
-    logging_object.info(f"Server läuft auf {server_ip}:{port_server} und wartet auf Verbindungen...")
+    if server_ip:
+        # Erstelle server_socket Objekt in TCP-Konfiguration
+        server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        server_socket.bind((server_ip, port_server))
+        server_socket.listen(250)
+        logging_object.info(f"Server läuft auf {server_ip}:{port_server} und wartet auf Verbindungen...")
 
-    # Startet den Broadcast-Thread
-    broadcast_thread = threading.Thread(
-        target=broadcast_server_info,
-        args=(logging_object, port_server, port_broadcast, server_ip, interval_broadcast))
-    broadcast_thread.daemon = True
-    broadcast_thread.start()
+        # Startet den Broadcast-Thread
+        broadcast_thread = threading.Thread(
+            target=broadcast_server_info,
+            args=(logging_object, port_server, port_broadcast, server_ip, interval_broadcast))
+        broadcast_thread.daemon = True
+        broadcast_thread.start()
 
-    try:
-        while True:
-            client_socket, client_address = server_socket.accept()
-            # Startet einen Thread pro Client
-            client_thread = threading.Thread(target=handle_client,
-                                             args=(logging_object, clients, client_socket, client_address))
-            client_thread.start()
-            logging_object.info(f"Thread für Verbindung mit {client_address} gestartet.")
-    except KeyboardInterrupt:
-        logging_object.info("Server wird heruntergefahren.")
-    finally:
-        server_socket.close()
+        # Starte den Client-Handler pro eingegangene Verbindung
+        try:
+            while True:
+                client_socket, client_address = server_socket.accept()
+                # Startet einen Thread pro Client
+                client_thread = threading.Thread(target=handle_client,
+                                                 args=(logging_object, clients, client_socket, client_address))
+                client_thread.start()
+                logging_object.info(f"Thread für Verbindung mit {client_address} gestartet.")
+        except KeyboardInterrupt:
+            logging_object.info("Server wird heruntergefahren.")
+        finally:
+            server_socket.close()
+
+    else:
+        return

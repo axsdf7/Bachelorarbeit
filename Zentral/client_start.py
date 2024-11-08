@@ -9,7 +9,7 @@ logger_name: Name des Loggers
 """
 
 # Setup
-freq = 100
+freq = 20
 broadcast_port = 50001
 logger_name = "client.log"
 logger = clients.create_logger(logger_name)
